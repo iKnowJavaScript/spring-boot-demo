@@ -17,7 +17,7 @@ public class PersonService {
 
     // Use autowired annotation to inject into the constructor
     @Autowired
-    public PersonService(@Qualifier("fakeDao") PersonDao personDao) {
+    public PersonService(@Qualifier("postgres") PersonDao personDao) {
         this.personDao = personDao;
     }
 
